@@ -1,69 +1,69 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: #252525;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #252525;
+  font-family: "Poppins", sans-serif;
 }
 
 .main {
-    margin: 0;
-    padding: 0;
-    display: flexbox;
-    background-color: #303030;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: larger;
+  margin: 0;
+  padding: 0;
+  display: flexbox;
+  background-color: #303030;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: larger;
 }
 
 .title {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 #passwordLenght {
-    background: #3a3a3a;
-    border: none;
-    border-radius: 0.4em;
-    height: 2em;
-    width: 20em;
-    color: white;
-    text-align: center;
-    font-size: large;
+  background: #3a3a3a;
+  border: none;
+  border-radius: 0.4em;
+  height: 2em;
+  width: 20em;
+  color: white;
+  text-align: center;
+  font-size: large;
 }
 
 #button {
-    height: 3em;
-    width: 8em;
-    font-size: large;
-    color: white;
-    background: rgb(44, 44, 248);
-    border: transparent;
-    border-radius: 0.3em;
+  height: 3em;
+  width: 8em;
+  font-size: large;
+  color: white;
+  background: rgb(44, 44, 248);
+  border: transparent;
+  border-radius: 0.3em;
 }
 
 #button:hover {
-    background: rgb(45, 45, 155);
+  background: rgb(45, 45, 155);
 }
 
 .result {
-    padding-top: 1vh;
+  padding-top: 1vh;
 }
 
 textarea {
-    resize: none;
-    height: 40vh;
-    width: 50vw;
-    text-align: center;
-    background: #3a3a3a;
-    font-size: 2vh;
-    color: white;
+  resize: none;
+  height: 40vh;
+  width: 50vw;
+  text-align: center;
+  background: #3a3a3a;
+  font-size: 2vh;
+  color: white;
 }
 
 *::placeholder {
-    color: rgb(207, 207, 207);
-    font-size: large;
-    text-align: center;
+  color: rgb(207, 207, 207);
+  font-size: large;
+  text-align: center;
 }
