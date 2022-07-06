@@ -12,10 +12,11 @@ function generatePassword() {
   if (
     passwdLenght >= 5 &&
     passwdLenght <= 1000 &&
-    (areLowerCaseAllowed === "true" ||
-      areUpperCaseAllowed === "true" ||
-      areSymbolsAllowed === "true" ||
-      areNumbersAllowed === "true")
+    areLowerCaseAllowed +
+      areNumbersAllowed +
+      areSymbolsAllowed +
+      areUpperCaseAllowed >
+      0
   ) {
     const lowercase = [
       "a",
@@ -129,7 +130,8 @@ function generatePassword() {
     }
     document.getElementById("result").innerHTML = password;
   } else {
-    document.getElementById("result").innerHTML =
-      "Wprowadzono nieprawidłową długość hasła lub nie wybrano żadnych znaków.";
+    document.getElementById(
+      `result`
+    ).innerHTML = `Nieprawidłowa długość hasła lub żadne opcje nie zostały wybrane.`;
   }
 }
