@@ -1,3 +1,4 @@
+"use strict";
 function generatePassword() {
   let passwdLenght = Number(document.getElementById("passwordLenght").value);
   let areLowerCaseAllowed = document.getElementById(
