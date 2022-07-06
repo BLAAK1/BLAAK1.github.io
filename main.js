@@ -120,9 +120,18 @@ function generatePassword() {
       let Number = Math.floor(Math.random() * (max - 0 + 1)) + 0;
       password += allowed[Number];
     }
+    if (
+      areLowerCaseAllowed === "false" &&
+      areUpperCaseAllowed === "false" &&
+      areSymbolsAllowed === "false" &&
+      areNumbersAllowed === "false"
+    ) {
+      document.getElementById("result").innerHTML =
+        "Musisz wybrać co najmniej jedną opcję.";
+    }
     document.getElementById("result").innerHTML = password;
   } else {
     document.getElementById("result").innerHTML =
-      "Wprowadzono nieprawidłową długość hasła";
+      "Wprowadzono nieprawidłową długość hasła.";
   }
 }
