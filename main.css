@@ -26,7 +26,7 @@ body {
 }
 
 .buttons a {
-  font-size: large;
+  font-size: 2vh;
   text-decoration: none;
   color: black;
   margin: 2vw;
@@ -46,22 +46,26 @@ body {
 }
 #aboutMe {
   width: 100%;
-  height: 20%;
+  height: 32%;
   color: black;
   text-align: center;
-  font-size: large;
+  font-size: 2vh;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
 article {
-  font-size: larger;
+  font-size: 2vh;
+}
+#portfolio {
+  width: 100%;
+  height: 90%;
 }
 .project {
   background: #131313bd;
   border-radius: 10px;
   text-align: center;
-  height: 44vh;
-  width: 50vw;
+  height: 30vh;
+  width: 100%;
   margin-top: 1vh;
 }
 .project a {
@@ -94,7 +98,7 @@ article {
 }
 .links {
   display: flex;
-  width: 40vw;
+  width: 50vw;
   text-align: center;
   justify-content: space-around;
 }
