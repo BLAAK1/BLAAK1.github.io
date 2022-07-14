@@ -37,16 +37,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.title h1 {
-  font-family: "Caveat", cursive;
-  font-size: 3.5vh;
-}
-.burger-menu {
-  justify-content: end;
-}
-.nav-menu {
-  display: none;
-}
+
 footer {
   margin-top: auto;
   height: 6vh;

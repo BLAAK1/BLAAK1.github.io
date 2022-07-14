@@ -18,6 +18,32 @@ header {
   -moz-box-shadow: 4px -3px 20px 16px rgba(0, 0, 0, 1);
   box-shadow: 4px -3px 20px 16px rgba(0, 0, 0, 1);
 }
+.burger-menu {
+  justify-content: end;
+}
+.nav-menu {
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu li {
+  float: left;
+  background: rgb(0, 255, 149);
+}
+.nav-menu a {
+  padding: 1vw;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 1.5vmin;
+  font-weight: bolder;
+}
+.nav-menu a:hover {
+  border-bottom: solid 2px black;
+}
 .page-header {
   width: 100vw;
   height: 8vh;
@@ -37,35 +63,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-.title h1 {
-  font-family: "Caveat", cursive;
-  font-size: 3.5vh;
-}
-.burger-menu {
-  display: none;
-}
-.nav-menu {
-  align-items: center;
-  justify-content: center;
-}
-.nav-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-menu li {
-  float: left;
-}
-.nav-menu a {
-  padding: 1vw;
-  text-decoration: none;
-  color: #1c1c1c;
-  font-size: 1.5vmin;
-  font-weight: bolder;
-}
-.nav-menu a:hover {
-  border-bottom: solid 2px black;
-}
 
 footer {
   margin-top: auto;
@@ -76,4 +73,24 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+/* For phone */
+@media only screen and (min-width: 100px) and (max-width: 899px) {
+  .title h1 {
+    font-family: "Caveat", cursive;
+    font-size: 3.8vh;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
+/* Else */
+@media only screen and (min-width: 900px) {
+  .title h1 {
+    font-family: "Caveat", cursive;
+    font-size: 3.5vh;
+  }
+  .burger-menu {
+    display: none;
+  }
 }

@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Strona główna</title>
     <meta name="author" content="Oskar Zegar" />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 900px)"
-      href="./css/main.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 899px)"
-      href="./css/mobile.css"
-    />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,9 +31,12 @@
         <h1>Oskar Zegar</h1>
       </div>
       <div class="page burger-menu">
-        <img src="./content/hamburger-menu-svgrepo-com.svg" onclick="menu()" />
+        <img
+          src="./content/hamburger-menu-svgrepo-com.svg"
+          onclick="burgerMenu()"
+        />
       </div>
-      <div class="page nav-menu">
+      <div class="page nav-menu" id="menu">
         <ul>
           <li><a href="index.html">Strona główna</a></li>
           <li><a href="aboutme.html">O mnie</a></li>
@@ -51,6 +45,17 @@
         </ul>
       </div>
     </header>
+    <script>
+      const menu = document.getElementById("menu");
+      function WindowSize() {
+        if (window.innerWidth <= 899) {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      }
+      window.addEventListener("resize", WindowSize);
+    </script>
     <main>
       <h1>Lorem ipsum</h1>
     </main>
