@@ -2,10 +2,18 @@ body {
   margin: 0;
   padding: 0;
   background: #1c1c1c;
-  height: 150vh;
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #252525;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 149);
 }
 header {
   background: rgb(0, 255, 149);
@@ -40,9 +48,6 @@ header {
   color: #1c1c1c;
   font-size: 1.5vmin;
   font-weight: bolder;
-}
-.nav-menu a:hover {
-  border-bottom: solid 2px black;
 }
 .page-header {
   width: 100vw;
@@ -83,82 +88,96 @@ footer {
   align-items: center;
 }
 
-.contentPortfolio {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-}
-.contentPortfolio a {
-  font-size: 3vh;
-  text-decoration: none;
-  color: white;
-}
-.child2,
-.child3,
-.child4,
-.child5,
-.child6,
-.child7,
-.child8,
-.child9 {
-  height: 200px;
-  width: 350px;
-  text-align: center;
-  border-radius: 10px;
-  background: #505050;
-  margin: 1vh;
-  line-height: 200px;
-}
-.child1 {
-  grid-area: 1 / 1 / 2 / 3;
-  font-size: 3vh;
-  color: white;
-  text-align: center;
-}
-.child2 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-.child3 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-.child4 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.child5 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-.child6 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-.child7 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-.child8 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-.child9 {
-  grid-area: 5 / 2 / 6 / 3;
-}
 /* Contact */
 /* For phone */
 @media only screen and (min-width: 100px) and (max-width: 899px) {
+  body {
+    height: 210vh;
+  }
   .title h1 {
     font-family: "Caveat", cursive;
     font-size: 3.8vh;
+    position: absolute;
   }
   .nav-menu {
     display: none;
   }
+  .nav-menu a {
+    font-size: 2.5vmin;
+    padding-top: 10px;
+  }
   /* Home page */
   /* About me */
   /* Portfolio */
+  .contentPortfolio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 0.8fr);
+  }
+  .contentPortfolio a {
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+  }
+  .child2,
+  .child3,
+  .child4,
+  .child5,
+  .child6,
+  .child7,
+  .child8,
+  .child9 {
+    height: 20vh;
+    width: 70vw;
+    text-align: center;
+    border-radius: 10px;
+    background: #505050;
+    margin: 1vh;
+    line-height: 20vh;
+  }
+  .child1 {
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+  }
+  .child2 {
+    grid-area: 2 / 1 / 2 / 2;
+  }
+  .child3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .child4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .child5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .child6 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .child7 {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  .child8 {
+    grid-area: 8 / 1 / 9 / 2;
+  }
+  .child9 {
+    grid-area: 9 / 1 / 10 / 2;
+  }
   /* Contact */
 }
 /* Else */
 @media only screen and (min-width: 900px) {
+  body {
+    height: 120vh;
+  }
   .title h1 {
     font-family: "Caveat", cursive;
     font-size: 3.5vh;
+  }
+  .nav-menu a:hover {
+    border-bottom: solid 2px black;
   }
   .burger-menu {
     display: none;
@@ -166,5 +185,61 @@ footer {
   /* Home page */
   /* About me */
   /* Portfolio */
+  .contentPortfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(5, 0.8fr);
+  }
+  .contentPortfolio a {
+    font-size: 3vh;
+    text-decoration: none;
+    color: white;
+  }
+  .child2,
+  .child3,
+  .child4,
+  .child5,
+  .child6,
+  .child7,
+  .child8,
+  .child9 {
+    height: 200px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    background: #505050;
+    margin: 1vh;
+    line-height: 200px;
+  }
+  .child1 {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+  }
+  .child2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .child3 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .child4 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .child5 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .child6 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .child7 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .child8 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .child9 {
+    grid-area: 5 / 2 / 6 / 3;
+  }
   /* Contact */
 }
